@@ -15,14 +15,18 @@ pip install .
 ```
 
 ## 使い方
-### 単純なベクトルの定義
+単純なベクトルの定義
 ```python
 from mathobj import MathObj
 
+# 定義
 class MyVector(MathObj):
   def __init__(self, x, y):
     self.x = x
     self.y = y
+  def __str__(self):
+    return f'MyVector({self.x:.2f}, {self.y:.2f})'
+
   def _unary(self, fn):
     return MyVector(fn(self.x), fn(self.y))
   def _binary(self, fn, b):
@@ -33,10 +37,14 @@ class MyVector(MathObj):
     if isinstance(b, MyVector):
       return MyVector(fn(b.x, self.x), fn(b.y, self.y))
     return MyVector(fn(b, self.x), fn(b, self.y))
-  def __str__(self):
-    return f'MyVector({self.x:.2f}, {self.y:.2f})'
-
+  
+# 使用
 a = MyVector(10, 20)
 b = MyVector(20, 30)
 print(a + b) # MyVector(30, 50)
 ```
+
+## 必要条件
+- Python 3.13.1 (動作確認済)
+
+
