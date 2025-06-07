@@ -1,0 +1,9 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="mathobj",
+    version="0.1.0",
+    description="This module provides the MathObj class, which encapsulates the implementation of operator overrides.",
+    download_url="",
+    packages=find_packages()
+)
