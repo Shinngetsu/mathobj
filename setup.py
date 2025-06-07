@@ -4,6 +4,6 @@ setup(
     name="mathobj",
     version="0.1.0",
     description="This module provides the MathObj class, which encapsulates the implementation of operator overrides.",
-    download_url="",
+    download_url="https://github.com/Shinngetsu/mathobj.git",
     packages=find_packages()
 )
