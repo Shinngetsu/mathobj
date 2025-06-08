@@ -1,4 +1,4 @@
-
+#coding: utf-8
 import operator as op, itertools as its, abc
 
 
