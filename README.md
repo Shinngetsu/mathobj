@@ -11,10 +11,8 @@ This module provides the "MathObj" class, which encapsulates the implementation 
 - 処理能力はお察し
 
 ## インストール
-```
-git clone https://github.com/Shinngetsu/mathobj.git
-cd mathobj
-pip install .
+```bash
+pip install git+https://github.com/Shinngetsu/mathobj.git
 ```
 
 ## 使い方
